@@ -1,14 +1,14 @@
 # include <stdio.h>
 /**
- *main- print numbers
+ *main - print numbers
  *Return: 0
  */
 int main(void)
 {
-char numbers;
-for (numbers = 48 ; numbers <= 57; numbers++)
+int numbers;
+for (numbers = 0; numbers <= 9; numbers++)
 {
-putchar(numbers);
+putchar(numbers + '0');
 }
 putchar('\n');
 return (0);
