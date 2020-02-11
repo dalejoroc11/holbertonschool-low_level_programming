@@ -1,18 +1,18 @@
 #include "holberton.h"
 /**
  * _abs - value of an integer
- * @x: ineteger
+ * @abs: ineteger
  * Return: 0
  */
-int _abs(int x)
+int _abs(int abs)
 {
-if (x < 0)
+if (abs < 0)
 {
-x = x * -1;
-return (x);
+abs = abs * -1;
+return (abs);
 }
 else
 {
-return (x);
+return (abs);
 }
 }
