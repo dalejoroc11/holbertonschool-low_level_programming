@@ -1,9 +1,9 @@
 #include <stdio.h>/*library std output*/
 #include <stdlib.h>/*library*/
 #include <time.h>/*library time*/
- /**
- * positive_or_negative - positive and negative
- * Return: 0
+/**
+ *positive_or_negative - p o neg
+ *@i: integer
  */
 void positive_or_negative(int i)
 {
