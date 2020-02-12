@@ -4,7 +4,10 @@
  */
 void times_table(void)
 {
-int n1 = 0, n2, n3 = n1, n4 = 0, n5;
+int n1, n2, n3, n4, n5;
+n1 = 0;
+n3 = n1;
+n4 = 0;
 while (n1 < 10)
 {
 _putchar(48);
