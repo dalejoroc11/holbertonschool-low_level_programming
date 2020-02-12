@@ -19,7 +19,7 @@ _putchar('0' + n3);
 }
 else
 {
-n5 = n3 / 10;
+n4 = n3 / 10;
 n5 = n3 % 10;
 _putchar(';');
 _putchar(' ');
