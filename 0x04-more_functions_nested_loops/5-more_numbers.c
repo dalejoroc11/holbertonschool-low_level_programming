@@ -1,10 +1,10 @@
 #include "holberton.h"
 /**
- * more:numbers - more
+ * more_numbers - more
  */
 void more_numbers(void)
 {
-int  a= 0;
+int  a = 0;
 int i, b, c;
 while (a <= 9)
 {
