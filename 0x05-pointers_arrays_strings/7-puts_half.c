@@ -18,7 +18,7 @@ if (num > 1)
 {
 if ((num % 2) != 0)
 {
-num = (num + 1) / 2;	
+num = (num + 1) / 2;
 }
 else
 {
