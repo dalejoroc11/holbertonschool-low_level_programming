@@ -10,7 +10,7 @@ char a, b;
 while (s[i] != '\0')
 {
 i++;/*conocer tamaño*/
- }/*longitud del stringg*/
+} /*longitud del stringg*/
 i = i - 1;
 tmp = i / 2;/*j debe llegar a la mitad de la cadena*/
 /*pa poder intercambiar valores*/
