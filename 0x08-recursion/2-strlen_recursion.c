@@ -6,11 +6,15 @@
  */
 int _strlen_recursion(char *s)
 {
-static int cont = 0;
-if (*s != '\0')
+int cont = 0;
+if (*s)
 {
 cont = cont + 1;
-_strlen_recursion(++s);
+return (cont + _strlen_recursion(++s));
 }
-return (cont);
+else
+{
+return (0);
 }
+}
+
