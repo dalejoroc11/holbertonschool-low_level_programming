@@ -3,7 +3,7 @@
  * main - print arguments
  * @argc: arguments
  * @argv: array
- * return: o succes
+ * Return: 0
  */
 int main(int argc, char *argv[])
 {
