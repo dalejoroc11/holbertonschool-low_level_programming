@@ -3,7 +3,7 @@
 #include <stdlib.h>
 /**
  * malloc_checked - alloc mem malloc
- * @b
+ * @b: var int dir mem
  * Return: sucess
  */
 void *malloc_checked(unsigned int b)
@@ -13,7 +13,7 @@ p = NULL;
 p = malloc(b);
 if (p == NULL)
 {
-exit (98);
+exit(98);
 }
 return (p);
 }
