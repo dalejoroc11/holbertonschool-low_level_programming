@@ -1,8 +1,8 @@
 #include "holberton.h"
 #include <stdio.h>
 /**
- *main - value of an integer
- *Return: 0
+ * main - value of an integer
+ * Return: 0
  */
 int main(void)
 {
