@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <holberton.h>
+#include "holberton.h"
 /**
  * main - value of an integer
  * @n: integer
