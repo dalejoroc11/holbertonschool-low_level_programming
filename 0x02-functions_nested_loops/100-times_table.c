@@ -1,9 +1,8 @@
-#include <stdio.h>
 #include "holberton.h"
+
 /**
- * main - value of an integer
- * @n: integer
- * Return: 0
+ * m99 - Prints "Hello"
+ * @n: The number to be checked
  */
 void m99(int n)
 {
@@ -82,5 +81,4 @@ void print_times_table(int n)
 			_putchar('\n');
 		}
 	}
-}
 }
