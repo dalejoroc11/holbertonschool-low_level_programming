@@ -1,5 +1,11 @@
 #ifndef HOLBERTON_H
 #define HOLBERTON_H
+/**
+ * struct dog - structure
+ * @name: name var
+ * @age: age var
+ * @owner: owner
+ */
 struct dog
 {
 char *name;
