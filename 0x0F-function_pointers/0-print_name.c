@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include "function_pointers.h"
 /**
  * print_name - fun print name
  * @name: var name
