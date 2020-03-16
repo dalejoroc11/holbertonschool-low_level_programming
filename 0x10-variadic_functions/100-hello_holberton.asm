@@ -1,4 +1,4 @@
-ection .data
+section .data
 str:	 db "Hello, Holberton", 10,0
 
 	section .text
