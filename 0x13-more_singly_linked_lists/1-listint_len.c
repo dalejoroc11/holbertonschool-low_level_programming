@@ -6,8 +6,7 @@
  */
 size_t listint_len(const listint_t *h)
 {
-int len;
-len = 0;
+int len = 0;
 while (h != NULL)
 {
 h = h[0].next;
