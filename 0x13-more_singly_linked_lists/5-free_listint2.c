@@ -22,5 +22,4 @@ return;
 }
 free(*head);
 head = NULL;
-return (0);
 }

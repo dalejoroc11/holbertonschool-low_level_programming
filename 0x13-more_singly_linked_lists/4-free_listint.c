@@ -9,8 +9,9 @@ void free_listint(listint_t *head)
 listint_t *freelist;
 while (head)
 {
-freelist = freelist[0].next;
+freelist = head;
+head = freelist[0].next;
 free(freelist);
 }
-return (head);
+free(head);
 }
