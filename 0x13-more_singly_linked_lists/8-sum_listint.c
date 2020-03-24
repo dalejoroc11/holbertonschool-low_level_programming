@@ -12,7 +12,7 @@ if (link != NULL)
 {
 while (link != NULL)
 {
-sumlis += 1[0].n;
+sumlis += link[0].n;
 link = link[0].next;
 }
 return (sumlis);
