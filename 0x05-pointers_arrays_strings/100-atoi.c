@@ -2,7 +2,6 @@
 /**
  * _atoi - convert a string to an integer
  * @s: string
- *
  * Return: num if finds a number
  * 0 otherwise
  */
@@ -28,6 +27,6 @@ else if (flag)
 break;
 i++;
 }
-num = num * neg;
+num = num *neg;
 return (num);
 }
