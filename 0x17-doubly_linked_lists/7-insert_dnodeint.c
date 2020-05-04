@@ -1,49 +1,51 @@
 #include "lists.h"
-#include <stdlib.h>
 /**
- * insert_dnodeint_at_index - fun inserts a node
- * @h: header
- * @idx: index
- * @n: data
- * Return: new element
+ * dlistint_len - Returns lenght of list
+ * @h: Holds the head
+ * Return: lenght
+ */
+size_t dlistint_len(const dlistint_t *h)
+{
+size_t i;
+for (i = 0; h; h = h->next, i++)
+;
+return (i);
+}
+/**
+ * insert_dnodeint_at_index - Inserts nodes at index
+ * @h: Holds the head
+ * @idx: Holds the position
+ * @n: The value to add
+ * Return: the node
  */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
-dlistint_t *new_node = NULL, *temp = NULL;
-unsigned int i = 0;
-new_node = malloc(sizeof(dlistint_t));
-if (!new_node)
-return (NULL);
-new_node->next = NULL;
-new_node->prev = NULL;
-new_node->n = n;
-if (!h || !(*h))
-*h = new_node;
-else
+size_t len, i;
+dlistint_t *tmp, *lili;
+len = dlistint_len(*h);
+tmp = *h;
+if (len < idx)
+return (0);
+else if (idx == 0)
+return (add_dnodeint(h, n));
+else if (idx == len)
+return (add_dnodeint_end(h, n));
+else if (idx != 0 && idx != len)
 {
-temp = *h;
-while (idx != i++ && temp->next)
-temp = temp->next;
-if (temp->next)
-new_node->prev = temp->prev;
-else
-new_node->prev = temp;
-if (idx == i)
-temp->next = new_node, new_node->prev = temp;
-else if (idx == i - 1)
+lili = malloc(sizeof(dlistint_t));
+if (lili)
 {
-if (temp->prev)
-temp->prev->next = new_node;
-else
-*h = new_node;
-temp->prev = new_node;
-new_node->next = temp;
-}
-else
+lili->n = n;
+for (i = 0; tmp; tmp = tmp->next, i++)
+if (i + 1 == idx)
 {
-free(new_node);
-return (NULL);
+lili->next = tmp->next;
+lili->prev = tmp;
+tmp->next->prev = lili;
+tmp->next = lili;
+return (lili);
 }
 }
-return (new_node);
+}
+return (0);
 }
