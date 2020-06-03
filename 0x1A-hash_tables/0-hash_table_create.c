@@ -1,7 +1,8 @@
-#include "hash_tables.h"
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include "hash_tables.h"
+
 /**
  * hash_table_create - ht create with 1024 spaces
  * @size: size with arrays to create
