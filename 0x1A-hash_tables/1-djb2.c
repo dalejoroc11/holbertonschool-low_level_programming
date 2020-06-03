@@ -1,7 +1,8 @@
-#include "hash_tables.h"
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include "hash_tables.h"
+
 /**
  * hash_djb2 - distribution of the keys and fewer splits
  * @str: string calculate hash
@@ -16,4 +17,5 @@ while ((c = *str++))
 {
 hash = ((hash << 5) + hash)+c; /* hash * 33 + c */
 }
-return
+return(hash);
+}
