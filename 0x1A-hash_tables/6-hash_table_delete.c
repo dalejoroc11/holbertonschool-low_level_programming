@@ -4,7 +4,7 @@
 #include <stdio.h>
 /**
  * hash_table_delete - deklete ht
- * @ht - hastable
+ * @ht: hastable
  * Return: free
  */
 void hash_table_delete(hash_table_t *ht)
